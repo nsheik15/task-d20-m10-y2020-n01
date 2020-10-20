@@ -1,0 +1,21 @@
+<div class="holder">
+  <h2>3. Add and Remove</h2>
+
+  <div>
+    <input type="text" [(ngModel)]="inputText" />
+    <br /><br />
+    <button mat-raised-button (click)="addOfferings()">Add Offerings</button>
+  </div>
+  <br /><br />
+
+  <div #ForRef *ngIf="OffFlag">
+    <div *ngFor="let arr of textArray; let i = index">
+      <p class="paragraph">{{ arr }}</p>
+      <div class="r-btn">
+        <button mat-raised-button (click)="removeVal(i)">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+</div>

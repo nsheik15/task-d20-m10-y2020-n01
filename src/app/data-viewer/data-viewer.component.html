@@ -1,0 +1,21 @@
+<div class="holder">
+  <form [formGroup]="AutoCompleteForm" (ngSubmit)="fetchData(AutoCompleteField.value)">
+    <mat-form-field class="example-full-width">
+      <input type="text"
+             placeholder="Pick one"
+             aria-label="Number"
+             matInput
+             formControlName="AutoCompleteField"
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let Data of ReceivedDataArray" [value]="Data.name">
+          {{Data.name}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field> {{ AutoCompleteField.value }}
+
+    <div>
+      <button mat-raised-button type="submit">Fetch Data</button>
+    </div>
+  </form>
+</div><br><br><br><br><br>

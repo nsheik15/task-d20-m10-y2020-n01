@@ -1,0 +1,57 @@
+div {
+  text-align: center;
+  padding-top: 20px;
+}
+.div1 {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p1 {
+  float: left;
+  width: 125px;
+}
+.p2 {
+  float: left;
+  width: 125px;
+}
+.p3 {
+  float: left;
+  width: 125px;
+}
+strong:hover {
+  cursor: pointer;
+}
+.circle-red {
+  float: left;
+  width: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  transform: translate(110px,-10px);
+}
+.circle-pink {
+  float: left;
+  width: 20px;
+  background-color: rgb(238, 68, 125);
+  color: white;
+  border-radius: 50%;
+  transform: translate(110px,-10px);
+}
+.circle-violet {
+  float: left;
+  width: 20px;
+  background-color: rgb(86, 48, 192);
+  color: white;
+  border-radius: 50%;
+  transform: translate(95px,-10px);
+}
+.red {
+  color: red;
+}
+.pink {
+  color: rgb(238, 68, 125);
+}
+.violet {
+  color: rgb(86, 48, 192);
+}

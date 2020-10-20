@@ -1,0 +1,16 @@
+<div class="holder">
+  <h2>2. Display Only 5 Records Once Checkbox is Checked</h2>
+
+  <div>
+    <input type="checkbox" value="true" [(ngModel)]="checkMe">
+    <label>Check Me</label>
+  </div><br>
+
+  <div *ngIf="!checkMe">
+    <p *ngFor="let arr of myArray"> {{ arr }} </p>
+  </div>
+  <div *ngIf="checkMe">
+    <p *ngFor="let arr of newArray"> {{ arr }} </p>
+  </div>
+
+</div>

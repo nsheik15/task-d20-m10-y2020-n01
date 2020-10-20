@@ -1,0 +1,26 @@
+<div class="start-div"></div>
+<hr />
+<div class="holder">
+  <br />
+  <h2>1. Remove Selected Checkbox Items</h2>
+
+  <div *ngIf="sw">
+    <input type="checkbox" value="true" [(ngModel)]="sweden" />
+    <label>28 - Sweden</label>
+  </div>
+  <div *ngIf="us">
+    <input type="checkbox" value="true" [(ngModel)]="usa" />
+    <label>56 - USA</label>
+  </div>
+  <div *ngIf="en">
+    <input type="checkbox" value="true" [(ngModel)]="england" />
+    <label>89 - England</label>
+  </div>
+  <br />
+  <div>
+    <button mat-raised-button (click)="removeCheckbox()">
+      Remove Selected Checkbox Items
+    </button>
+  </div>
+</div>
+<br />

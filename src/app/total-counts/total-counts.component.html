@@ -1,0 +1,49 @@
+<div>
+  <p>
+    Status:
+    <strong
+      [ngClass]="[
+        dialogOneResult === 'Open' ? 'violet' : '',
+        dialogOneResult === 'Pending' ? 'red' : '',
+        dialogOneResult === 'Resolved' ? 'pink' : ''
+      ]"
+      (click)="openStatusOne()"
+    >
+      {{ dialogOneResult }}
+    </strong>
+  </p>
+  <hr />
+  <p>
+    Status: <strong
+    [ngClass]="[
+      dialogTwoResult === 'Open' ? 'violet' : '',
+      dialogTwoResult === 'Pending' ? 'red' : '',
+      dialogTwoResult === 'Resolved' ? 'pink' : ''
+    ]"
+    (click)="openStatusTwo()"> {{ dialogTwoResult }} </strong>
+  </p>
+  <hr />
+  <p>
+    Status:
+    <strong
+    [ngClass]="[
+      dialogThreeResult === 'Open' ? 'violet' : '',
+      dialogThreeResult === 'Pending' ? 'red' : '',
+      dialogThreeResult === 'Resolved' ? 'pink' : ''
+    ]"
+    (click)="openStatusThree()"> {{ dialogThreeResult }} </strong>
+  </p>
+  <hr />
+</div>
+<hr />
+<div class="div1">
+  <p class="p1">
+    OPEN<strong class="circle-violet"> {{ open }} </strong>
+  </p>
+  <p class="p2">
+    PENDINGS<strong class="circle-red"> {{ pendings }} </strong>
+  </p>
+  <p class="p3">
+    RESOLVED<strong class="circle-pink"> {{ resolved }} </strong>
+  </p>
+</div>
